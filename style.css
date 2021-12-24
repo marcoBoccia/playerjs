@@ -1,0 +1,16 @@
+*{
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+:root{
+
+    --main-color: #999BFF;
+
+    --second-color: #9A80E8;
+
+    --third-color:#C98CFF;
+
+    --main-gradient: linear-gradient(45deg, #999BFF, #9A80E8, #C98CFF)
+}
+
