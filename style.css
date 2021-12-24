@@ -11,6 +11,73 @@
 
     --third-color:#C98CFF;
 
-    --main-gradient: linear-gradient(45deg, #999BFF, #9A80E8, #C98CFF)
+    --main-gradient: linear-gradient(45deg, #999BFF, #9A80E8, #C98CFF);
+
+    --main-gradient-transparent: linear-gradient(45deg, #999bff62, #9A80E862, #C98CFF62);
+
 }
 
+main{
+    background: url(./Photo/backgound.jpeg);
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+.main-wrapper{
+
+    height: 500px;
+
+    background:var(--main-gradient-transparent);
+
+    backdrop-filter: blur(5px);
+
+    padding:50px;
+
+    border-radius: 50px;
+    box-shadow:  4px 4px 6px 0 rgba(0, 0, 0, 0.5),
+                -4px -4px 6px 0 rgb(200, 185, 136,0.2), 
+                inset -4px -4px 6px 0 rgba(0, 0, 0, 0.5),
+                inset 4px 4px 6px 0 rgba(200, 185, 136, 0.3);    
+}
+    
+.btn-menu{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+  }
+  .btn-menu:hover{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.5),         
+                inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  }
+  .btn-menu:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+                inset -4px -4px 6px 0 rgba(255,255,255,.5),
+                inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+      
+  }
