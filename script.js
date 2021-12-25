@@ -14,9 +14,45 @@ let tracks= [
 
 ]
 
+const songListWrapper= document.querySelector('#songListWrapper');
+
+
+
 function populateSongList(){
 
-    console.log(tracks);
+    tracks.forEach(track => {
+
+        let card= document.createElement('div')
+
+        card.classList.add('col-12')
+
+        card.innerHTML=` <div class="col-12">
+
+         <div class="card-song d-flex justify-content-between align-items-center">
+        
+         <h3 class="text-gradient">${track.title}</h3>
+        
+        
+           <button class="btn btn-play-song">
+        
+           <i class="fa-solid fa-play"></i>
+        
+           </button>
+        
+         </div>
+        
+        
+         </div>`
+
+        songListWrapper.appendChild(card)
+
+    })
+
 }
 
 populateSongList()
+
+
+
+
+
