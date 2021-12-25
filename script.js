@@ -16,6 +16,60 @@ let tracks= [
 
 const songListWrapper= document.querySelector('#songListWrapper');
 
+let currentTrack=2
+
+// Buttons
+
+const btnPlay = document.querySelector('#btnPlay');
+const btnPause = document.querySelector('#btnPause');
+const btnNextTrack = document.querySelector('#btnNextTrack')
+const btnPrevTrack = document.querySelector('#btnPrevTrack')
+
+
+// Element
+
+const albumCover=document.querySelector('#albumCover');
+const track=document.querySelector('#track')
+const trackArtist=document.querySelector('#trackArtist')
+const trackTitle=document.querySelector('#trackTitle')
+
+
+
+// track.addEventListener('playing', () =>{
+
+// })
+
+
+// Events
+
+btnPlay.addEventListener('click', () =>{
+
+    btnPlay.classList.toggle('d-none')
+    btnPause.classList.toggle('d-none')
+    albumCover.classList.toggle('play')
+    track.play()
+})
+
+btnPause.addEventListener('click', () =>{
+
+    btnPlay.classList.toggle('d-none')
+    btnPause.classList.toggle('d-none')
+    albumCover.classList.toggle('play')
+    track.pause()
+
+})
+
+btnNextTrack.addEventListener('click',()=>{
+
+    nextTrack()
+})
+
+btnPrevTrack.addEventListener('click',()=>{
+
+    prevTrack()
+})
+
+
 
 
 function populateSongList(){
@@ -49,6 +103,45 @@ function populateSongList(){
     })
 
 }
+
+function changeTrackDetails(){
+    let song=tracks[currentTrack]
+
+    albumCover.src = song.cover
+
+    track.src = song.url
+
+    trackArtist.innerHTML = song.artist
+
+    trackTitle.innerHTML = song.title
+
+}
+
+function nextTrack(){
+
+    currentTrack++
+
+    if(currentTrack > tracks.length - 1)
+
+    currentTrack=0
+
+    changeTrackDetails()
+}
+
+function prevTrack(){
+
+    currentTrack--
+    if(currentTrack < 0 ){
+
+        currentTrack =  tracks.length - 1
+    }
+
+    changeTrackDetails()
+
+}
+
+
+changeTrackDetails()
 
 populateSongList()
 

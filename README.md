@@ -1,22 +1,22 @@
 # TO DO LIST
 
-- Creare la parte grafica
+- Creare la parte grafica OK
 
-- Player al centro con immagine di sfondo
+- Player al centro con immagine di sfondo OK 
 
-- Lista delle canzoni 
+- Lista delle canzoni OK
 
-- Funzione Play
+- Funzione Play OK
 
-- Funzione Pausa
+- Funzione Pausa OK 
 
-- Funzione Next
+- Funzione Next OK
 
-- Funzione Prev 
+- Funzione Prev  OK 
 
 - Tempo che scorre
 
-- Animazione disco che gira
+- Animazione disco che gira OK 
 
 - Funzione volume
 

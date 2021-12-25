@@ -100,14 +100,58 @@ main{
                     animation: colorchange 3s linear infinite;
   }
 
+
+  /* Lista Canzoni  */
  .card-song{
             padding: 10px 30px;
 
             border-bottom: 2px solid var(--second-color);
               
+}
+
+/* Sezione Player */
+
+.album-cover{
+            border-radius: 100%;
+
+}
+
+.album-cover.play{
+
+    animation-name: rotate;
+
+    animation-duration: 2s;
+
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+}
 
 
- }
+.player-progress{
+
+    display: flex;
+
+    height: 15px;
+
+    overflow: hidden;
+
+    font-size: .75rem;
+
+    background-color:#454545a4 ;
+
+    border-radius: 30px;
+}
+
+.player-progress,.progress.bar{
+
+    background: var(--main-gradient);
+    border-radius: 30px;
+}
+
+@keyframes rotate {
+	to {transform:rotate(360deg);}
+}
 
 
 
