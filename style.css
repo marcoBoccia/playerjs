@@ -47,27 +47,27 @@ main{
 }
     
 .btn-menu{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    background: var(--main-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent;
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            background: var(--main-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent;
 
     box-shadow:
-     -7px -7px 20px 0px #fff9,
-     -4px -4px 5px 0px #fff9,
-     7px 7px 20px 0px #0002,
-     4px 4px 5px 0px #0001;
-     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
-    font-size: 26px;
-    color: white;
-    text-decoration: none;
-  }
+                -7px -7px 20px 0px #fff9,
+                -4px -4px 5px 0px #fff9,
+                7px 7px 20px 0px #0002,
+                4px 4px 5px 0px #0001;
+                transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+                font-size: 26px;
+                color: white;
+                text-decoration: none;
+            }
   .btn-menu:hover{
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
                 -4px -4px 6px 0 rgba(116, 125, 136, .2), 
