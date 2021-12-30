@@ -5,15 +5,15 @@
 
 :root{
 
-    --main-color: #999BFF;
+    --main-color: #292ceb;
 
-    --second-color: #9A80E8;
+    --second-color: #36579e;
 
-    --third-color:#C98CFF;
+    --third-color:#8cabff;
 
-    --main-gradient: linear-gradient(45deg, #999BFF, #9A80E8, #C98CFF);
+    --main-gradient: linear-gradient(45deg, #111394, #113e81, #441491);
 
-    --main-gradient-transparent: linear-gradient(45deg, #999bff62, #9A80E862, #C98CFF62);
+    --main-gradient-transparent: linear-gradient(45deg, #0b0e8b62, #250b7462, #8cb4ff62);
 
 }
 
@@ -113,6 +113,8 @@ main{
 
 .album-cover{
             border-radius: 100%;
+            
+            
 
 }
 

@@ -14,7 +14,9 @@
 
 - Funzione Prev  OK 
 
-- Tempo che scorre
+-Traccia successiva una volta terminata la corrente OK
+
+- Tempo che scorre OK
 
 - Animazione disco che gira OK 
 
