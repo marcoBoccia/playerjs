@@ -20,8 +20,3 @@
 
 - Animazione disco che gira OK 
 
-- Funzione volume
-
-- Mettere in coda una canzone
-
-- Riproduzione casuale
